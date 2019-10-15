@@ -8,7 +8,7 @@ A kafka stack with topics ui embedded for viewing of topics
 * Docker CE/Enterprise
 * Docker Compose
 
-**NOTE** : ensure that the following ports are open, 80,3030,9091-9092,8081-8083
+**NOTE** : ensure that the following ports are open, 80,3030,9091-9092,8081-8083,2181
 
 ## Running it
 
