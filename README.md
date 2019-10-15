@@ -1,4 +1,4 @@
-# Kafka , Zookeeper, Kafka Rest Proxy and Landoop UI Kafka Topics
+# Kafka , Zookeeper, Kafka Rest Proxy and Landoop UI for Kafka Topics
 
 A kafka stack with topics ui embebbed for viewing of topics
 
@@ -56,9 +56,6 @@ var clusters = [
 * Set `DEBUG_LOGS_ENABLED` to true to enable the debug logs.
 * Set `LAZY_LOAD_TOPIC_META` to true to lazy load topic meta information.
 
-
-## Changelog
-[Here](https://github.com/Landoop/kafka-topics-ui/releases)
 
 ## Common Issues
 
