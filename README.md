@@ -1,6 +1,6 @@
 # Kafka , Zookeeper, Kafka Rest Proxy and Landoop UI for Kafka Topics
 
-A kafka stack with topics ui embebbed for viewing of topics
+A kafka stack with topics ui embedded for viewing of topics
 
 
 ## Pre requisites 
