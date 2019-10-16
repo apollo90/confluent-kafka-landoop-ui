@@ -47,7 +47,7 @@ services:
     image: landoop/kafka-topics-ui:0.9.4
     hostname: kafka-topics-ui
     ports:
-      - "3030:3030"
+      - "3030:8000"
     environment:
       KAFKA_REST_PROXY_URL: "http://kafka-rest-proxy:8082/"
       PROXY: "true"
