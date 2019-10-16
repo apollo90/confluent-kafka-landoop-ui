@@ -16,8 +16,13 @@ First clone this repo in you suitable folder
 ```
   git clone https://github.com/apollo90/confluent-kafka-landoop-ui.git
 ```
+Navigate to /confluent-kafka-landoop-ui/docker-compose.yml  and change PUBLIC_IP_ADDRESS to you actual address on the advertised listener environment variable
 
-Navigate to /confluent-kafka-landoop-ui and execute the docker compose command
+```
+  KAFKA_ADVERTISED_LISTENERS: INTERNAL://kafka:9091,EXTERNAL://PUBLIC_IP_ADDRESS:9092
+```
+
+ Execute the docker compose command to bring the stack up
 
 ```
   docker-compose up --build -d
