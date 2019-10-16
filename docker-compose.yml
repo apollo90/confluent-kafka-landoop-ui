@@ -10,6 +10,8 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
     volumes:
       - /home/zookeeper-data:/tmp/zookeeper
+    restart:always
+    
   kafka:
     image: confluentinc/cp-kafka:5.3.1 
     depends_on:
@@ -30,6 +32,8 @@ services:
       KAFKA_LOG_DIRS: /tmp/kafka-logs
     volumes:
       - /home/kafka-data:/tmp/kafka-logs
+    restart:always
+    
   kafka-rest-proxy:
     image: confluentinc/cp-kafka-rest:5.3.1 
     hostname: kafka-rest-proxy
@@ -43,6 +47,8 @@ services:
     depends_on:
       - zookeeper
       - kafka
+    restart:always
+    
   kafka-topics-ui:
     image: landoop/kafka-topics-ui:0.9.4
     hostname: kafka-topics-ui
@@ -55,3 +61,4 @@ services:
       - zookeeper
       - kafka
       - kafka-rest-proxy
+    restart:always
